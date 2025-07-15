@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>너 지금 뭐해?</title>
+  <link rel="icon" href="https://lh3.googleusercontent.com/d/1r51_in8C0TKK-OqfrFtSfWw7kyHIO0z1" type="image/png" />
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-image: url('https://lh3.googleusercontent.com/d/1QsLDDAKaZl-oUm9VPp8sIFFZ1afxss_1');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .group-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .group {
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      min-width: 200px;
+    }
+
+    .group h3 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .group label {
+      display: block;
+      text-align: left;
+      margin-left: 10px;
+    }
+
+    #doingBox {
+      border: 2px solid #333;
+      padding: 20px;
+      margin: 40px auto 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      width: 40%;
+      border-radius: 12px;
+    }
+
+    #outputText {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <h2>너 지금 뭐 하고 있니?🤔</h2>
+
+  <form id="worldForm">
+    <div class="group-container">
+    <div class="group">
+      <h3>ㄱ)</h3>
+      <label><input type="checkbox" name="world" value="그늘진 침묵의 숲"> 그늘진 침묵의 숲</label>
+      <label><input type="checkbox" name="world" value="길 잃은 허무의 땅"> 길 잃은 허무의 땅</label>
+    </div>
+   <!-- ㅁ 그룹 -->
+    <div class="group">
+      <h3>ㅁ)</h3>
+      <label><input type="checkbox" name="world" value="맥동하는 융해의 동굴"> 맥동하는 융해의 동굴</label>
+      <label><input type="checkbox" name="world" value="메마른 절규의 땅"> 메마른 절규의 땅</label>
+      <label><input type="checkbox" name="world" value="목마른 쾌락의 정원"> 목마른 쾌락의 정원</label>
+      <label><input type="checkbox" name="world" value="몽환의 아스탤지어"> 몽환의 아스탤지어</label>
+      <label><input type="checkbox" name="world" value="몽환의 아페이론"> 몽환의 아페이론</label>
+      <label><input type="checkbox" name="world" value="무명의 요새"> 무명의 요새</label>
+    </div>
+
+    <!-- ㅂ 그룹 -->
+    <div class="group">
+      <h3>ㅂ)</h3>
+      <label><input type="checkbox" name="world" value="발길이 끊긴 고대유적"> 발길이 끊긴 고대유적</label>
+      <label><input type="checkbox" name="world" value="베히모스의 은신처"> 베히모스의 은신처</label>
+      <label><input type="checkbox" name="world" value="부서진 결계의 땅"> 부서진 결계의 땅</label>
+      <label><input type="checkbox" name="world" value="부패한 군주의 판데모니움"> 부패한 군주의 판데모니움</label>
+      <label><input type="checkbox" name="world" value="부활한 마수의 심장"> 부활한 마수의 심장</label>
+      <label><input type="checkbox" name="world" value="붉게 찢어진 고원"> 붉게 찢어진 고원</label>
+      <label><input type="checkbox" name="world" value="빛바랜 망각의 폐허"> 빛바랜 망각의 폐허</label>
+    </div>
+
+    <!-- ㅅ 그룹 -->
+    <div class="group">
+      <h3>ㅅ)</h3>
+      <label><input type="checkbox" name="world" value="사라진 자들의 골짜기"> 사라진 자들의 골짜기</label>
+      <label><input type="checkbox" name="world" value="사무친 절규의 협곡"> 사무친 절규의 협곡</label>
+    </div>
+
+    <!-- ㅇ 그룹 -->
+    <div class="group">
+      <h3>ㅇ)</h3>
+      <label><input type="checkbox" name="world" value="어둠의 바라트론"> 어둠의 바라트론</label>
+      <label><input type="checkbox" name="world" value="영원한 빛의 요람"> 영원한 빛의 요람</label>
+      <label><input type="checkbox" name="world" value="우레치는 폭풍의 탑"> 우레치는 폭풍의 탑</label>
+    </div>
+
+    <!-- ㅈ 그룹 -->
+    <div class="group">
+      <h3>ㅈ)</h3>
+      <label><input type="checkbox" name="world" value="조각난 선혈의 흉터"> 조각난 선혈의 흉터</label>
+      <label><input type="checkbox" name="world" value="짓밟힌 정원"> 짓밟힌 정원</label>
+      <label><input type="checkbox" name="world" value="짙은 안개의 능선"> 짙은 안개의 능선</label>
+    </div>
+
+    <!-- ㅎ 그룹 -->
+    <div class="group">
+      <h3>ㅎ)</h3>
+      <label><input type="checkbox" name="world" value="한밤중의 서커스"> 한밤중의 서커스</label>
+      <label><input type="checkbox" name="world" value="희락의 성전 아타락시움"> 희락의 성전 아타락시움</label>
+    </div>
+
+    <div id="output" style="margin-top:20px; font-weight:bold;"></div>
+
+    <div id="doingBox">
+      <strong>하고 있는 것</strong>
+      <div id="outputText">-</div>
+    </div>
+  </form>
+
+  <script>
+     const worldMap = {
+      "그늘진 침묵의 숲": "가르가디스(가토) / 크라티오스(가토)",
+      "길 잃은 허무의 땅": "아게오로스(가토)",
+      "맥동하는 융해의 동굴": "1막(에기르) 2관문",
+      "메마른 절규의 땅": "소나벨(가토)",
+      "목마른 쾌락의 정원": "비아키스(군단장)",
+      "몽환의 아스탤지어": "아브렐슈드(군단장)",
+      "몽환의 아페이론": "2막(아브) 2관문",
+      "무명의 요새": "1막(에기르) 1관문",
+      "발길이 끊긴 고대유적": "베히모스 1관문",
+      "베히모스의 은신처": "베히모스 2관문",
+      "부서진 결계의 땅": "3막(모르둠) 1관문",
+      "부패한 군주의 판데모니움": "일리아칸(군단장)",
+      "부활한 마수의 심장": "발탄(군단장)",
+      "붉게 찢어진 고원": "에키드나 1관문",
+      "빛바랜 망각의 폐허": "드렉탈라스(가토)",
+      "사라진 자들의 골짜기": "3막(모르둠) 2관문",
+      "사무친 절규의 협곡": "2막(아브) 1관문",
+      "어둠의 바라트론": "카멘(군단장)",
+      "영원한 빛의 요람": "카양겔",
+      "우레치는 폭풍의 탑": "3막(모르둠) 3관문",
+      "조각난 선혈의 흉터": "스콜라키아(가토)",
+      "짓밟힌 정원": "상아탑",
+      "짙은 안개의 능선": "베스칼(가토)",
+      "한밤중의 서커스": "쿠크세이튼(군단장)",
+      "희락의 성전 아타락시움": "에키드나 2관문"
+    };
+
+
+    const form = document.getElementById("worldForm");
+    const outputText = document.getElementById("outputText");
+
+    form.addEventListener("change", (e) => {
+      if (e.target.name === "world") {
+        const checkboxes = form.querySelectorAll("input[type='checkbox']");
+        checkboxes.forEach(box => {
+          if (box !== e.target) box.checked = false;
+        });
+
+        const selected = e.target.value;
+        outputText.textContent = `${selected} → ${worldMap[selected] || "정보 없음"}`;
+      }
+    });
+  </script>
+</body>
+</html>
